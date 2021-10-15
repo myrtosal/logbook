@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="js/face.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="main_camera.css" />
+    </script>
+</head>
+
+<body>
+    <input type='button' id="snap" value='Take Photo' onclick="faceRec.handle_canvades();">
+    <input type='button' id="upload" value='Upload Image'>
+    <video id='video' width='600' height='400' autoplay></video>
+    <canvas id='canvas' width='640' height='480'></canvas>
+    <script>
+        faceRec.init();
+    </script>
+</body>
+
+</html>

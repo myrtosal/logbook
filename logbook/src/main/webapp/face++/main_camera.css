@@ -1,0 +1,10 @@
+    video {
+        height: 90%;
+        width: 90%;
+    }
+    
+    canvas {
+        height: 90%;
+        width: 90%;
+        display: none;
+    }

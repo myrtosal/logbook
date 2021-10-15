@@ -1,0 +1,34 @@
+<div class="pos-f-t ">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+            </button>
+            <button type="button" class="btn btn-default navbar-btn pull-right bg_white" onclick="show_main_page();">Main page</button>
+            <button type="button" class="btn btn-default navbar-btn pull-right bg_white" onclick="show_user_info();">Main profile</button>
+            <div class="test_right">
+                <button type="button" class="btn btn-default navbar-btn pull-right bg_white" onclick="handle_log_out();">Log out</button>
+            </div>
+        </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4 ">
+            <button type="button" class="btn btn-default  bg_white" onclick="update_info();">Update info</button>
+            <button type="button" class="btn btn-default  bg_white" onclick="show_users();">All users</button>
+        </div>
+    </div>
+</div>
+<div class="section1">
+    <img class="rounded-circle intro_im" src="assets/intro_image.jpg" alt="intro image cant be found">
+    <div id="welcome" class="sec1_words">
+        <h1>Welcome to logbook</h1>
+        <p id="welcome_message">Hi </p>
+    </div>
+</div>
+<div class="page_container" id="the_page_container">
+    <div class="array_subjects">
+        <table id="the_user_table" class="table table-bordered table-dark">
+
+        </table>
+    </div>
+</div>

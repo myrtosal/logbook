@@ -1,0 +1,421 @@
+    body {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        background-image: url(./assets/background-image.jpg);
+    }
+    
+    .navbar-header {
+        margin-left: 5px;
+        width: 100%;
+    }
+    
+    .test_right {
+        float: right;
+    }
+    
+    .header {
+        color: #a75656;
+        margin-left: 21%;
+        margin-top: 2%;
+    }
+    
+    .main {
+        margin-bottom: 8%;
+        width: 100%;
+        display: flex;
+        margin-top: 2%;
+    }
+    
+    .main_sign {
+        margin-bottom: 8%;
+        width: 100%;
+        margin-top: 2%;
+    }
+    
+    #error_pass {
+        display: none;
+    }
+    
+    #error_location {
+        display: none;
+    }
+    
+    #face_not_recognized {
+        display: none;
+    }
+    
+    #face_ok {
+        display: none;
+    }
+    
+    .form_style {
+        width: 60%;
+        margin-left: 20%;
+        border-color: #343a40!important;
+        background-color: #fdf7f7;
+    }
+    
+    .form_area {
+        margin-top: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
+        min-height: 80%;
+    }
+    
+    .form_area_sign {
+        margin-top: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    
+    .formarea_title {
+        line-height: 25px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .formarea_half {
+        width: 50%;
+        margin-bottom: 10px;
+        float: left
+    }
+    
+    .formarea_full {
+        width: 100%;
+        margin-bottom: 10px;
+        float: left
+    }
+    
+    label {
+        display: block;
+        line-height: 16px;
+        font-size: 17px;
+        color: black;
+    }
+    
+    .formarea_half>input {
+        width: 90%;
+        display: block;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid rgba(185, 158, 150, 0.3);
+        font-size: 18px;
+    }
+    
+    .formarea_full>input {
+        width: 95%;
+        display: block;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid rgba(185, 158, 150, 0.3);
+        font-size: 18px;
+    }
+    
+    .formarea_full>select {
+        width: 95%;
+        display: block;
+        height: 30px;
+        border-radius: 3px;
+        border: 1px solid rgba(185, 158, 150, 0.3);
+        font-size: 17px;
+    }
+    
+    .buttons {
+        display: flex;
+    }
+    
+    .interests {
+        width: 95%;
+    }
+    
+    .safety {
+        background-color: #342828;
+    }
+    
+    .sign-up-button {
+        float: left;
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .sign-in-button {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    footer {
+        display: block;
+        font-size: 15px;
+        color: black;
+        margin-bottom: 5%;
+        margin-left: 16%;
+        background-color: white;
+        width: 69%;
+        bottom: 0;
+        height: 2.5rem;
+    }
+    
+    footer p {
+        padding: 1%;
+    }
+    
+    .array_subjects {
+        width: 35%;
+    }
+    
+    .array_subjects h4 {
+        margin-left: 1%;
+    }
+    
+    .table-dark {
+        color: #fff;
+        background-color: #343a40;
+    }
+    
+    .section1 {
+        width: 100%;
+        display: flex;
+        background-color: #b7cbc0b5;
+        color: #03475d;
+    }
+    
+    .intro_im {
+        width: 30%;
+        height: 200px;
+    }
+    
+    .sec1_words {
+        width: 70%;
+        margin: 4%2%0%10%;
+    }
+    
+    .sec1_words h1 {
+        font-size: 40px;
+    }
+    
+    .bg_white {
+        background-color: white;
+    }
+    
+    .form_style_update {
+        width: 100%;
+        border-color: #343a40!important;
+        background-color: #fdf7f7;
+    }
+    
+    .page_container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .post_container {
+        width: 65%;
+    }
+    
+    .main_page_post_container {
+        margin-left: 20%;
+        margin-top: 3%;
+    }
+    
+    .post_creation {
+        width: 70%;
+        border-color: #343a40!important;
+        background-color: #fdf7f7;
+        margin-bottom: 10px;
+        padding-left: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        display: flow-root;
+        margin-left: 15%;
+    }
+    
+    .post_area {
+        width: 95%;
+        padding-left: 2%;
+    }
+    
+    .post {
+        background-color: white;
+        margin-bottom: 2%;
+    }
+    
+    .post h5 {
+        color: blue;
+        margin-bottom: 0;
+        text-decoration: underline;
+    }
+    
+    .post_bottom {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2%;
+        margin-bottom: 2px;
+    }
+    
+    .post_top {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2%;
+        margin-bottom: 2px;
+    }
+    
+    .post_top span {
+        font-size: 16px;
+        color: #616770;
+    }
+    
+    .post p {
+        font-size: 17px;
+        padding-top: 1%;
+        margin-bottom: 0;
+    }
+    
+    .post img {
+        width: 100%;
+        height: 300px;
+        border-bottom: 1px solid #6d6e6e!important;
+        border-top: 1px solid #6d6e6e!important;
+    }
+    
+    .external_links {
+        padding-left: 2%;
+    }
+    
+    .post a:link {
+        color: #020094;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    
+    .post_deletion a:link {
+        color: black;
+        background-color: transparent;
+        font-size: 17px;
+        margin-right: 2%;
+    }
+    
+    .canvades {
+        width: 100%;
+    }
+    
+    .map_place {
+        width: 40%;
+        margin-bottom: 1%;
+    }
+    
+    .post_container_detailed {
+        width: 60%;
+    }
+    
+    .post_area_detailed {
+        width: 100%;
+        padding-left: 2%;
+    }
+    
+    #delete_button {
+        display: none;
+    }
+    
+    #cancel_button {
+        display: none;
+        margin-left: 1%;
+    }
+    
+    #message_prompt_area {
+        display: flex;
+        padding-top: 1%;
+    }
+    
+    #place_answer {
+        background-color: white;
+    }
+    
+    @media screen and (max-width: 480px) {
+        body {
+            font-size: 19px;
+        }
+        .header {
+            margin-left: 0;
+        }
+        .form_style {
+            width: 70%;
+            margin-left: 15%;
+        }
+        #area {
+            height: 250px!important;
+        }
+        .array_subjects {
+            font-size: 14px;
+        }
+        .array_subjects h4 {
+            margin-left: 4%;
+        }
+        .sec1_words {
+            margin: 2%2%0%10%;
+        }
+        .sec1_words h1 {
+            font-size: 25px;
+        }
+        .intro_im {
+            height: 140px;
+        }
+        .main {
+            flex-direction: column;
+        }
+        .form_style_update {
+            width: 70%;
+            margin-left: 15%;
+        }
+        .array_subjects {
+            width: 100%;
+        }
+        .page_container {
+            flex-direction: column;
+        }
+        .post_container {
+            width: 100%;
+        }
+        .main_page_post_container {
+            margin-left: 2%;
+            margin-top: 3%;
+        }
+        .post_container_detailed {
+            width: 98%;
+        }
+        .map_place {
+            width: 100%;
+            margin-bottom: 0;
+        }
+    }
+    
+    @media screen and (max-width: 320px) {
+        .header p {
+            margin-bottom: 0;
+        }
+        .form_style {
+            width: 80%;
+            margin-left: 10%;
+        }
+        .formarea_half {
+            width: 100%;
+        }
+        .main {
+            margin-top: 6%;
+        }
+        .section1 {
+            flex-direction: column;
+        }
+        .intro_im {
+            width: 100%;
+            border-radius: 0%!important;
+        }
+        .sec1_words h1 {
+            font-size: 25px;
+        }
+        .form_style_update {
+            width: 80%;
+            margin-left: 10%;
+        }
+    }

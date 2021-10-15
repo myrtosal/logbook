@@ -1,0 +1,42 @@
+<nav class="navbar bg-dark">
+    <div class="navbar-header ">
+        <div class="test_right">
+            <button type="button" class="btn btn-default navbar-btn pull-right bg_white" onclick="load_sign_up_page();">Sign up</button>
+            <button type="button" class="btn btn-default navbar-btn pull-right bg_white" onclick="load_sign_page();">Sign in</button>
+        </div>
+
+    </div>
+
+</nav>
+<div class="main_sign">
+    <form class="form_style border rounded ">
+        <div class="form_area_sign">
+            <div class="formarea_title">
+                <p>
+                    <b>Sign in</b>
+                </p>
+            </div>
+            <div class="formarea_half">
+                <label>Username</label>
+                <input type="text" name="username" id="username" pattern="[a-zA-Z0-9]{8,}" title="atleast 8 characters(latin)"  required>
+            </div>
+            <div class="formarea_half">
+                <label>Password</label>
+                <input type="password" name="password" id="password" pattern="(?=.*[`~!@#$%^&*_])(?=.*[a-zA-Z])(?=.*[0-9]).{8,10}" title="8-10 charactes atleast one latin character a number  and a symbol" required>
+            </div>
+            <div class="formarea_full" id="sign-in-handler">
+                <button type="button" class="btn btn-primary" id="camera" value="camera" onclick="faceRec.create_canvas_area();">Facial autofill</button>
+            </div>
+            <div class="formarea_full" id="canvas_area">
+                <h6 id="face_not_recognized"><b>face_not_recognized,try again</b></h6>
+            </div>
+            <div class="formare_full" id="wrong_inputs">
+                <h6 id="login_fails_msg"></h6>
+            </div>
+            <button class="btn btn-primary btn-lg sign-in-button" id="sign-in_btn" type="button" onclick="handle_sign_in();">Sign-in</button>
+        </div>
+    </form>
+</div>
+<footer id="footer" class="rounded">
+    <p>&#9400Copyright 2019 Savvas Apostolidis All Rights Reserved. Contact:savvetos@gmail.com for liscensing.</p>
+</footer>

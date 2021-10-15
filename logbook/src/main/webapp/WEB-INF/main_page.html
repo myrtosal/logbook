@@ -1,0 +1,77 @@
+<div class="pos-f-t ">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+            </button>
+            <button type="button" class="btn btn-default navbar-btn pull-right bg_white" onclick="show_main_page();">Main page</button>
+            <button type="button" class="btn btn-default navbar-btn pull-right bg_white" onclick="show_user_info();">Main profile</button>
+            <div class="test_right">
+                <button type="button" class="btn btn-default navbar-btn pull-right bg_white" onclick="handle_log_out();">Log out</button>
+            </div>
+        </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4 ">
+            <button type="button" class="btn btn-default  bg_white" onclick="update_info();">Update info</button>
+            <button type="button" class="btn btn-default  bg_white" onclick="show_users();">All users</button>
+        </div>
+    </div>
+</div>
+<div class="section1">
+    <img class="rounded-circle intro_im" src="assets/intro_image.jpg" alt="intro image cant be found">
+    <div id="welcome" class="sec1_words">
+        <h1>Welcome to logbook</h1>
+        <p id="welcome_message">Hi  </p>
+    </div>
+</div>
+<div class="page_container" id="the_page_container">
+    <div class="post_container main_page_post_container" id="the_post_container">
+        <div class="post_creation border rounded">
+            <div class="formarea_full">
+                <label>Create post</label>
+                <textarea class="form-control interests" id="post_description" rows="5" name="general" maxlength="500" title="max 500 characters" placeholder="whats on your mind?"></textarea>
+            </div>
+            <div class="formarea_half">
+                <label>Lat</label>
+                <input type="text" name="Lat" id="lat">
+            </div>
+            <div class="formarea_half ">
+                <label>Lon</label>
+                <input type="text " name="lon " id="lon">
+            </div>
+            <div class="formarea_full">
+                <button type="button" class="btn btn-primary" id="find_location" value="find_location" onclick="fill_lat_lon();">Find me</button>
+            </div>
+
+            <div class="formarea_half">
+                <label>Image url,optional</label>
+                <input type="text" name="image_url" id="image_url">
+            </div>
+            <div class="formarea_half ">
+                <label>external url,optional</label>
+                <input type="text " name="external_url " id="external_url">
+            </div>
+            <div class="formarea_full">
+                <label>Image base64,optional</label>
+                <input type="text" name="image_base64" id="image_base64">
+            </div>
+            <div class="formarea_full">
+                <button type="button" class="btn btn-primary" id="camera" value="camera" onclick="image_api.create_canvas_area();">Camera</button>
+            </div>
+            <div class="formarea_full" id="canvas_area">
+
+            </div>
+            <div class="formarea_full">
+                <input id="inp" onclick="add_listener_inp();"  type='file'>
+            </div>
+            <div class="formarea_full">
+                <h6 id="wrong_input"></h6>
+            </div>
+            <button class="btn btn-primary" id="upload_post " type="button" onclick="upload_post_main_page(); ">Upload</button>
+        </div>
+        <div class="post_area" id="posts_area">
+
+        </div>
+    </div>
+</div>
